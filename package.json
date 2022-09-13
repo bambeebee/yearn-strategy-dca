@@ -19,5 +19,12 @@
       "pre-commit": "yarn lint:fix",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "dependencies": {
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "@uniswap/v3-core": "^1.0.1",
+    "@uniswap/v3-periphery": "^1.4.1",
+    "uniswap": "^0.0.1",
+    "yearn-finance-vaults": "^1.0.0"
   }
 }

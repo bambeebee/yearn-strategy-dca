@@ -1,4 +1,4 @@
-from brownie import Strategy, accounts, config, network, project, web3
+from brownie import Strategy, accounts, config, network, project
 from eth_utils import is_checksum_address
 from scripts.helpful_scripts import (
     get_account,
