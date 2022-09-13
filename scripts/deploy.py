@@ -1,4 +1,4 @@
-from brownie import Strategy, accounts, config, network, project
+from brownie import Strategy, accounts, config, network, project, ISwapRouter, Uniswap
 from eth_utils import is_checksum_address
 from scripts.helpful_scripts import (
     get_account,
@@ -14,4 +14,6 @@ def main():
     token = Token.at("0x6b175474e89094c44da98b954eedeac495271d0f")
     gov = "ychad.eth"  # ENS for Yearn Governance Multisig
 
-    strategy = Strategy.deploy(vault, {"from": accounts[0]})
+    swapRouter = ISwapRouter.deploy({"from": accounts[0]})
+    uniswap = Uniswap.deploy(swapRouter, {"from": accounts[0]})
+    strategy = Strategy.deploy(vault, uniswap, {"from": accounts[0]})

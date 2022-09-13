@@ -5,7 +5,7 @@ pragma experimental ABIEncoderV2;
 import "../interfaces/ISwapRouter.sol";
 import "../libraries/TransferHelper.sol";
 
-contract UniswapSwap {
+contract Uniswap {
     // For the scope of these swap examples,
     // we will detail the design considerations when using
     // `exactInput`, `exactInputSingle`, `exactOutput`, and  `exactOutputSingle`.

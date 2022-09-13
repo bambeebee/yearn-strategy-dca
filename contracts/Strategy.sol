@@ -21,11 +21,6 @@ import {
 // uniswap
 import "../interfaces/ISwapRouter.sol";
 
-// import "@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol";
-
-// Import interfaces for many popular DeFi projects, or add your own!
-//import "../interfaces/<protocol>/<Interface>.sol";
-
 contract Strategy is BaseStrategy {
     using SafeERC20 for IERC20;
     using Address for address;
